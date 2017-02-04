@@ -1,0 +1,11 @@
+name: bootstrapped 
+description: A collection of Bootstrap components built with over_react
+version: 0.1.0
+author: Benjamin Campbell <i@benjic.me>
+homepage: https://github.com/benjic/bootstrapped
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dev_dependencies:
+  test: '>=0.12.0 <0.13.0'
