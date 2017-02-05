@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bootstrapped Examples</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="packages/react/react.js"></script>
+    <script src="packages/react/react_dom.js"></script>
+    <script defer src="main.dart" type="application/dart"></script>
+    <script defer src="packages/browser/dart.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='row'>
+            <div class='col'>
+                <h1>Bootstrapped Examples</h1>
+                <p>This page illustrates the use of all the mechanisms made available by the <b>Bootstrapped</b> library.</p>
+
+                <h2>Layout</h2>
+                <p>The layout grid provided by bootstrap is available as a set of components.</p>
+
+                <h2>Components</h2>
+                <p>The components defined within bootstrap are provided by the library.</p>
+
+                <h3>Alert</h3>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible
+                    alert messages.</p>
+                <div id='alert-example'></div>
+                <pre>
+  final alertExample = (Dom.div())([
+    (Alert()..context = AlertContext.danger)([
+      Dom.strong()('Oh snap!'),
+      ' Change a few things up and try again',
+    ]),
+    (Alert()..context = AlertContext.info)([
+      Dom.strong()('Heads up!'),
+      ' This alert needs your attention, but it\'s not super important.'
+    ]),
+    (Alert()..context = AlertContext.success)([
+      Dom.strong()('Well done!'),
+      ' You successfully read this important alert message.'
+    ]),
+    (Alert()..context = AlertContext.warning)([
+      Dom.strong()('Warning!'),
+      ' Better check yourself, you\'re not looking too good.'
+    ]),
+  ]);
+                </pre>
+
+                <h3>Badge</h3>
+                <p>Small and adaptive tag for adding context to just about any content.</p>
+                <div id='badge-example'></div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
