@@ -5,7 +5,7 @@ author: Benjamin Campbell <i@benjic.me>
 homepage: https://github.com/benjic/bootstrapped
 
 environment:
-  sdk: '>=1.0.0 <2.0.0'
+  sdk: '>=1.8.0 <2.0.0'
 
 dependencies:
   over_react: ^1.5.0
