@@ -28,6 +28,21 @@ void main() {
       Dom.strong()('Warning!'),
       ' Better check yourself, you\'re not looking too good.'
     ]),
+    (Dom.h4()('Dismissable Alerts')),
+    (Alert()
+      ..context = AlertContext.warning
+      ..dismissable = true
+      ..animate = true)([
+      Dom.strong()('Holy guacamole!'),
+      ' I am an animated dismissal. Watch me fade away...',
+    ]),
+    (Alert()
+      ..context = AlertContext.danger
+      ..dismissable = true
+      ..animate = false)([
+      Dom.strong()('Holy guacamole!'),
+      ' I am not animated. I will leave as soon as I am dismissed.',
+    ]),
   ]);
 
   react_dom.render(alertExample, querySelector('#alert-example'));

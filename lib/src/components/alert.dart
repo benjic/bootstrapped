@@ -39,8 +39,11 @@ class AlertComponent extends UiComponent<AlertProps> {
     final children = (props.dismissable
         ? ([
             (Dom.button()
+              ..addProp('data-dismiss', 'alert')
+              ..addProp('aria-label', 'Close')
               ..type = 'button'
-              ..className = 'close')(Dom.span()('×'))
+              ..className =
+                  'close')((Dom.span()..addProp('aria-hidden', 'true'))('×'))
           ]..addAll(props.children))
         : props.children);
 
