@@ -77,4 +77,13 @@ void main() {
   );
 
   react_dom.render(badgeExample, querySelector('#badge-example'));
+
+  final breadcrumbExample = (Breadcrumb())([
+    (BreadcrumbItem()..href = "#")('Alpha'),
+    (BreadcrumbItem()..href = "#")('Beta'),
+    (BreadcrumbItem()..href = "#")('Gamma'),
+    (BreadcrumbItem()..active)('Delta'),
+  ]);
+
+  react_dom.render(breadcrumbExample, querySelector('#breadcrumb-example'));
 }
