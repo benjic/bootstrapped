@@ -86,4 +86,43 @@ void main() {
   ]);
 
   react_dom.render(breadcrumbExample, querySelector('#breadcrumb-example'));
+
+  final buttonsFactory =
+      (String label, dynamic buttonFactory(ButtonContext context)) {
+    final heading = (Dom.h4())(label);
+    final buttons = ButtonContext.values.map((ButtonContext context) =>
+        buttonFactory(context)(context.toString().split(".")[1]));
+    return (Dom.div())([heading]..addAll(buttons));
+  };
+
+  final buttons = (Dom.div())([
+    buttonsFactory('Normal', (context) => Button()..context = context),
+    buttonsFactory(
+        'Outline',
+        (context) => Button()
+          ..context = context
+          ..outline = true),
+    buttonsFactory(
+        'Large',
+        (context) => Button()
+          ..context = context
+          ..size = ButtonSize.large),
+    buttonsFactory(
+        'Small',
+        (context) => Button()
+          ..context = context
+          ..size = ButtonSize.small),
+    buttonsFactory(
+        'Active',
+        (context) => Button()
+          ..context = context
+          ..active = true),
+    buttonsFactory(
+        'Disabled',
+        (context) => Button()
+          ..context = context
+          ..disabled = true)
+  ]);
+
+  react_dom.render(buttons, querySelector('#button-example'));
 }
