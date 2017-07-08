@@ -1,10 +1,11 @@
 # bootstrapped
+
 [![Build Status](https://travis-ci.org/benjic/bootstrapped.svg?branch=master)](https://travis-ci.org/benjic/bootstrapped)
 
 > A collection of over_react components for the Bootstrap framework.
 
 This library aims to provide [`over_react`][over_react] statically typed
-component builders for the [Bootstrap][Bootstrap] framework.
+component builders for the [Bootstrap][bootstrap] framework.
 
 ## Examples
 
@@ -24,4 +25,5 @@ void main() {
 }
 ```
 
+[bootstrap]: https://getbootstrap.com/
 [over_react]: https://github.com/Workiva/over_react

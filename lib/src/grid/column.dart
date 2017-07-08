@@ -20,7 +20,7 @@ class ColumnComponent extends UiComponent<ColumnProps> {
   @override
   render() {
     final builder = new ClassNameBuilder.fromProps(props)
-      ..add('align-self-${_vertialAlignmentString[props.verticalAlignment]}',
+      ..add('align-self-${_verticalAlignmentString[props.verticalAlignment]}',
           props.verticalAlignment != null);
 
     (props.constraints.isEmpty ? _defaultConstraints : props.constraints)
