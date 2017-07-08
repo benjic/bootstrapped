@@ -12,7 +12,7 @@ final Map<HorizontalAlignment, String> _horizontalAlignmentString =
   HorizontalAlignment.start: 'start'
 });
 
-final Map<VerticalAlignment, String> _vertialAlignmentString =
+final Map<VerticalAlignment, String> _verticalAlignmentString =
     new Map.unmodifiable(<VerticalAlignment, String>{
   VerticalAlignment.center: 'center',
   VerticalAlignment.end: 'end',

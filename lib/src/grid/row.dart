@@ -18,7 +18,7 @@ class RowComponent extends UiComponent<RowProps> {
   @override
   render() {
     final className = new ClassNameBuilder.fromProps(props)
-      ..add('align-items-${_vertialAlignmentString[props.verticalAlignment]}',
+      ..add('align-items-${_verticalAlignmentString[props.verticalAlignment]}',
           props.verticalAlignment != null)
       ..add(
           'justify-content-${_horizontalAlignmentString[props.horizontalAlignment]}',
